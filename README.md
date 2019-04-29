@@ -1,23 +1,23 @@
 # Project-Phase_2
 
-UnRedactor:
+## UnRedactor:
 
 This project uses IMDB dataset from "http://ai.stanford.edu/~amaas/data/sentiment/" this website. 
 It is the lagest movie review available for sentiment analysis.
 We are going to use this for doing redaction and unredaction.
 
-Redactor : 
+## Redactor : 
 
 Hiding the important information to the public is a important task such as credic card details are redacted for security.
 In this project we are going to redact names present in the reviews.
 
-UnRedactor:
+## UnRedactor:
 
 We have to divide our available dataset for training and testing and redact both the datasets.
 Finally test it on the test data and unredact the information.
 
   
-Procedure Followed :
+## Procedure Followed :
 
         1. We have to take all the names from the document in the training data set and label the document with names belong to that document.
            For labeling there were lots of confusions that is solved as shown below.
@@ -55,7 +55,7 @@ Procedure Followed :
         8. Finally using the model it was easy to unredact the redacted files and displayed both the results.
            sometimes result will not show the real name since it might be the wrongly predicted results.
 
-Test Cases:
+## Test Cases:
 	
 	1. test_readFileDirectory : The module was tested against extracting .txt files from the given directory.
 	2. test_getentity : The module was able to extract entities from the text file
@@ -66,14 +66,14 @@ Test Cases:
 	7. test_unredactor : This module is tested on whether it is able to unredact properly all the names. 
 
 
-Run the code :
+## Run the code :
 
 	Program : " python /project/cs5293sp19-project1-phase2/project1_phase2/main.py "
 	(This is the location where main.py is present, It might take atleast 10 mins to run)
 	pytest code : " pipenv run python -m pytest " 
 	
 	
-sample output :
+## sample output :
 
 	Unredactor:
 	Total Words to unredact from test set :  79
@@ -120,10 +120,8 @@ sample output :
         d of film. I like it so well that I bought it on DVD because it just doesn't get shown very much on cable TV. Now, it
         's all mine!   
 
-Test Cases :
-
    
-Reference:
+## Reference:
 
     "https://docs.python.org" - Used the website for python usage.
     Used project1's test modules to construct testcases.
