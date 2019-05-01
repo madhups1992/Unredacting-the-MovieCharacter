@@ -1,6 +1,5 @@
 # Project-Phase_2
-
-## UnRedactor:
+# UnRedactor:
 
 This project uses IMDB dataset from "http://ai.stanford.edu/~amaas/data/sentiment/" this website. 
 It is the lagest movie review available for sentiment analysis.
